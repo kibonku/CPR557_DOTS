@@ -1,0 +1,43 @@
+{
+    "tasks": [
+        {
+            "type": "cppbuild",
+            "label": "C/C++: g++.exe build project",
+            "command": "c:\\msys64\\ucrt64\\bin\\g++.exe",
+            "args": [
+                "-fdiagnostics-color=always",
+                "-g",
+                "${workspaceFolder}/*.cpp", 
+                "-o",
+                "${workspaceFolder}/main.exe",
+                
+                //* Header path
+                "-I", "C:/VulkanSDK/1.4.335.0/Include",
+                "-I", "C:/VulkanSDK/1.4.335.0/glfw-3.4.bin.WIN64/include",
+
+                //* Library path
+                "-L", "C:/VulkanSDK/1.4.335.0/Lib",
+                "-L", "C:/VulkanSDK/1.4.335.0/glfw-3.4.bin.WIN64/lib-mingw-w64", 
+
+                //* Set links
+                "-lglfw3",
+                "-lvulkan-1",
+                "-lgdi32",
+                "-luser32",
+                "-lshell32"
+            ],
+            "options": {
+                "cwd": "c:\\msys64\\ucrt64\\bin"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "Vulkan & GLFW Build Task"
+        }
+    ],
+    "version": "2.0.0"
+}
