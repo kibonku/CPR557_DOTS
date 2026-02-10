@@ -6,8 +6,8 @@ This project draws dots using Vulkan point primitives and supports interactive d
 
 - **Phase 1 (Static dots):** Draw multiple dots at startup.
 - **Phase 2 (Interactive dots):** Add dots using mouse clicks.
-- **Phase 3 (Reset):** Clear all dots with a key press.
-- **Phase 4 (Creativity):** Optional extra feature (if implemented).
+- **Phase 3 (Reset View):** Clear all dots with a key press.
+- **Phase 4 (Remove dots):** Press 'D' to remove the most recently added dot.
   
 ## Build & Run:
 
