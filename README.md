@@ -21,3 +21,23 @@ Run the executable with the **project root** as the working directory so shader 
 If you use **VS Code**, set the working directory in `.vscode/launch.json`:
 ```json
 "cwd": "${workspaceFolder}"
+```
+
+## Controls
+
+- **Left Click:** Add a dot at the cursor position  
+- **SPACE:** Reset view (clear all dots)
+
+## Shader Compilation
+
+Vulkan loads **SPIR-V** shader binaries (`.spv`). If you modify GLSL shaders, recompile them:
+
+```bash
+glslc shaders/simple_shader.vert -o shaders/simple_shader.vert.spv
+glslc shaders/simple_shader.frag -o shaders/simple_shader.frag.spv
+```
+
+## Notes
+
+- Dots are rendered with `VK_PRIMITIVE_TOPOLOGY_POINT_LIST`.
+- Dot placement converts window pixel coordinates to NDC coordinates `[-1, 1]`.
