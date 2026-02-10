@@ -1,7 +1,3 @@
-CPRE 557 - Assignment 1
-
-Name: Kibon Ku
-
 Build / Run:
 - Build: use the provided build script / Makefile for this template.
 - Run: run the generated executable from the project root folder (so the program can find shaders in ./shaders).
