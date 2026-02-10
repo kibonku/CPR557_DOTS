@@ -2,9 +2,9 @@
 
 This project draws dots using Vulkan point primitives and supports interactive dot placement via mouse input.
 
-## Teaser
-<video src="assets/teaser.mp4" controls width="800"></video>
-
+<p align="center">
+  <img src="assets/teaser.gif" width="560">
+</p>
 
 ## Features
 
