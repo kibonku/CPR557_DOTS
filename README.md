@@ -1,21 +1,23 @@
-Build / Run:
-- Build: use the provided build script / Makefile for this template.
-- Run: run the generated executable from the project root folder (so the program can find shaders in ./shaders).
+# CPRE 557 — Computer Project #1: Dots (Vulkan + GLFW)
 
-Controls:
-Phase 1 (2 pts) - Static Dots
-- The program starts by drawing multiple static dots using VK_PRIMITIVE_TOPOLOGY_POINT_LIST.
+This project draws dots using Vulkan point primitives and supports interactive dot placement via mouse input.
 
-Phase 2 (4 pts) - Add Dots by Mouse Click
-- Left mouse click adds a dot at the cursor position.
+## Features
 
-Phase 3 (2 pts) - Reset View
-- Press SPACE to reset the view (clear all dots).
+- **Phase 1 (Static dots):** Draw multiple dots at startup.
+- **Phase 2 (Interactive dots):** Add dots using mouse clicks.
+- **Phase 3 (Reset):** Clear all dots with a key press.
+- **Phase 4 (Creativity):** Optional extra feature (if implemented).
+  
+## Build & Run:
 
-Phase 4 (2 pts) - Creativity Feature
-- (If implemented) Press 'D' to remove the most recently added dot.
-  Note: This feature is intended as the additional creativity option.
+### Build
+Use the provided course template build workflow (Makefile / script).
 
-Notes:
-- Dots are rendered as Vulkan point primitives (POINT_LIST).
-- Shader files are loaded from the ./shaders directory.
+### Run (important)
+Run the executable with the **project root** as the working directory so shader files can be loaded from:
+- `./shaders/*.spv`
+
+If you use **VS Code**, set the working directory in `.vscode/launch.json`:
+```json
+"cwd": "${workspaceFolder}"
