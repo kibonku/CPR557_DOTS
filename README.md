@@ -2,6 +2,10 @@
 
 This project draws dots using Vulkan point primitives and supports interactive dot placement via mouse input.
 
+## Teaser
+<video src="assets/teaser.mp4" controls width="800"></video>
+
+
 ## Features
 
 - **Phase 1 (Static dots):** Draw multiple dots at startup.
