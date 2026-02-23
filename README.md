@@ -47,7 +47,7 @@ If successful, the following two files should be created in the shaders/ folder:
 
 After that, press F5 to debug and run the program normally.
 
-if the .bat fails, compile directly with glslc:
+If the .bat fails, compile directly with glslc:
 
 ```bash
 glslc shaders/simple_shader.vert -o shaders/simple_shader.vert.spv
