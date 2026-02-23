@@ -1,4 +1,4 @@
-# CPRE 557 — Computer Project #1: Dots (Vulkan + GLFW)
+# Computer Project #1: Dots (Vulkan + GLFW)
 
 This project draws dots using Vulkan point primitives and supports interactive dot placement via mouse input.
 
