@@ -34,10 +34,24 @@ If you use **VS Code**, set the working directory in `.vscode/launch.json`:
 
 ## Shader Compilation
 
-Vulkan loads **SPIR-V** shader binaries (`.spv`). If you modify GLSL shaders, recompile them:
+Double-click compile-win.bat in the project root, or run it from the VS Code terminal:
 
 ```bash
 .\compile-win.bat
+```
+
+If successful, the following two files should be created in the shaders/ folder:
+
+- `simple_shader.vert.spv`
+- `simple_shader.frag.spv`
+
+After that, press F5 to debug and run the program normally.
+
+if the .bat fails, compile directly with glslc:
+
+```bash
+glslc shaders/simple_shader.vert -o shaders/simple_shader.vert.spv
+glslc shaders/simple_shader.frag -o shaders/simple_shader.frag.spv
 ```
 
 ## Notes
