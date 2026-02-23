@@ -37,8 +37,7 @@ If you use **VS Code**, set the working directory in `.vscode/launch.json`:
 Vulkan loads **SPIR-V** shader binaries (`.spv`). If you modify GLSL shaders, recompile them:
 
 ```bash
-glslc shaders/simple_shader.vert -o shaders/simple_shader.vert.spv
-glslc shaders/simple_shader.frag -o shaders/simple_shader.frag.spv
+.\compile-win.bat
 ```
 
 ## Notes
